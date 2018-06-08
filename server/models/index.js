@@ -10,7 +10,7 @@ var db        = {};
 
 
 if (config.use_env_variable) {
-  var sequelize = new Sequelize("postgres://loyrdvly:R6rUMVXQRbj6PUOn_wLes_ojiPap4OSd@pellefant.db.elephantsql.com:5432/loyrdvly", config.username, config.password, config);
+  var sequelize = new Sequelize(config.use_env_variable);
 } else {
   var sequelize = new Sequelize(config.database, config.username, config.password, config);
 }
