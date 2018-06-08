@@ -3,7 +3,7 @@
 
     "username": "postgres",
     "password": "Spf13609629560",
-    "database": "postgres2",
+    "database": "postgres",
     "host": "127.0.0.1",
     "port": 5432,
     "dialect": "postgres"

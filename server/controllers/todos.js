@@ -21,6 +21,7 @@ module.exports = {
       .then(todos => res.status(200).send(todos))
       .catch(error => res.status(400).send(error));
   },
+  
   retrieve(req, res) {
     return Todo
       .findById(req.params.todoId, {
